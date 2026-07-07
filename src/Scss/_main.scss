@@ -1,0 +1,119 @@
+main.start{
+    background-color: #131514;
+    min-height: 100vh;
+    
+    
+    .card{
+        background-color: #222222;
+        max-width: 600px;
+        margin-left: 50px;
+        border-radius: 10px;
+        max-height: 450px;
+            color: white !important;
+
+
+         .form-range {
+            width: 100%;
+            -webkit-appearance: none;     // Default styling hatao
+            appearance: none;
+            height: 6px;                  // Track ki height
+            border-radius: 3px;
+            background: #ffffff;            // ⬜ White track
+            outline: none;
+
+            // Webkit (Chrome, Safari, Edge) ke liye thumb hide karo
+            &::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                appearance: none;
+                display: none;              // 👍 Thumb hidden
+            }
+
+            // Firefox ke liye thumb hide karo
+            &::-moz-range-thumb {
+                display: none;              // 👍 Thumb hidden
+            }
+
+            // IE/Edge ke liye thumb hide karo
+            &::-ms-thumb {
+                display: none;              // 👍 Thumb hidden
+            }
+
+            // Firefox ke liye track styling
+            &::-moz-range-track {
+                background: #ffffff;
+                height: 6px;
+                border-radius: 3px;
+            }
+
+            // IE/Edge ke liye track styling
+            &::-ms-track {
+                background: #ffffff;
+                height: 6px;
+                border-radius: 3px;
+                border: none;
+                color: transparent;
+            }
+
+            // Disabled state mein opacity kam mat karo
+            &:disabled {
+                opacity: 1;
+            }
+        }
+
+        
+    Button{
+        border:1px solid #3f3e3e;
+            color: white !important;
+
+    }
+
+        .text1{
+            color:#9CA3AF !important;
+        }
+        
+        // padding: 10px;
+        .enroll{
+            background-color: transparent;
+            border: 1px solid #2281C1;
+            color: #2281C1 !important;
+            padding: 0px 10px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+
+
+// Apne SCSS file mein add karein
+
+// Dropdown menu background red
+.ant-dropdown-menu {
+    background-color: #222222 !important;
+    border-radius: 8px !important;
+}
+
+// Menu items red background
+.ant-dropdown-menu-item {
+    background-color: #222222 !important;
+    color: #ffffff !important;
+    
+    &:hover {
+        background-color: #3e3d3d !important;
+        color: #ffffff !important;
+    }
+}
+
+// Selected/Active item
+.ant-dropdown-menu-item-active {
+    background-color: #3e3d3d !important;
+}
+
+
+.custom-search {
+  .ant-input-search-icon,
+  .ant-input-search-icon svg {
+    color: #ffffff !important;
+  }
+}

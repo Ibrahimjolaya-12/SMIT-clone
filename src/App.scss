@@ -1,0 +1,59 @@
+@import"./Scss/_bootstrap.scss";
+@import"./Scss/_auth.scss";
+@import"./Scss/_password.scss";
+@import "./Scss/main.scss";
+@import "./Scss/Assignments.scss";
+@import "./Scss/progress.scss";
+@import "./Scss/dashhome.scss";
+@import "./Scss/screenloader.scss";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.ant-layout-sider {
+  background: #222222 !important;
+}
+
+.ant-menu-dark {
+  background: #222222 !important;
+}
+
+// Hover — sidebar trigger button
+.sidebar-trigger:hover {
+  background-color: #3d3e3e !important;
+}
+
+// Hover — menu items & submenu titles
+.ant-menu-dark .ant-menu-item:hover,
+.ant-menu-dark .ant-menu-submenu-title:hover {
+  background-color: #3d3e3e !important;
+}
+
+// Selected item — default blue hata ke apna color
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #3d3e3e !important;
+}
+
+// Agar submenu ka parent (jese "Todos") selected/open state me bhi blue aaraha ho
+.ant-menu-dark .ant-menu-submenu-selected > .ant-menu-submenu-title {
+  background-color: #3d3e3e !important;
+}
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    flex: 1 0 auto;
+}
+
+
+/* Aapki CSS file mein */
+.ant-breadcrumb a {
+  text-decoration: none !important;
+}

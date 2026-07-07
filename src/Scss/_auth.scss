@@ -1,0 +1,124 @@
+main.auth {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #141414;
+
+
+
+
+    // Password field wrapper - dark theme (jaisa baki inputs hain)
+.ant-input-password {
+  background-color: #2a2a2a; // ya jo baki inputs ka color hai
+  border-color: #444;
+  border-radius: 6px;
+
+  // 👇 Andar ka input - default/transparent rakho taake "box inside box" na dikhe
+  .ant-input {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    color: white;
+    
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  // 👇 Eye icon white
+  .ant-input-password-icon,
+  .ant-input-suffix {
+    color: white !important;
+  }
+}
+
+ // ... existing styles ...
+
+  // Input.Password eye icon color change
+  .ant-input-password {
+    .ant-input-suffix {
+      color: #95A1AA; // 👈 Icon ka color #95A1AA
+      
+      // Agar SVG icon hai toh
+      svg {
+        fill: #95A1AA;
+        color: #95A1AA;
+      }
+    }
+
+    // Direct icon class (Ant Design v5)
+    .ant-input-password-icon {
+      color: #95A1AA !important;
+      
+      &:hover {
+        color: #e4e4e7 !important; // Hover pe thora light
+      }
+    }
+  }
+    // form ke andar spacing kam karne ke liye
+    .ant-form-item {
+        margin-bottom: 12px; // default ~24px hota he, isko kam kar diya
+    }
+
+      
+
+    .ant-input,
+    .ant-input-affix-wrapper {
+        font-size: 13px;
+        background-color: #1E1E1E;
+        color: #ffffff;
+        border: 1px solid #3F3F46;
+        
+    }
+
+    .ant-input::placeholder {
+        color: #a1a1aa; // placeholder text ka color
+    }
+
+
+
+
+    .ant-form-item-label {
+        padding-bottom: 1px; // label aur input ke darmiyan gap kam
+
+        >label {
+            font-size: 13px;
+        }
+    }
+
+    // src/Scss/_auth.scss
+
+    .text-white {
+
+        // Label text white
+        .ant-form-item-label>label {
+            color: white !important;
+
+            // Required asterisk (*) white
+            &::before {
+                color: white !important;
+            }
+        }
+    }
+
+    .card {
+        background-color: #27272a;
+        max-width: 400px;
+        color: #ffffff;
+        // margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    :where(.css-dev-only-do-not-override-1pi45l5).ant-form-item .ant-form-item-label>label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        max-width: 100%;
+        height: var(--ant-form-label-height);
+        color: #f8f9fa;
+        font-size: var(--ant-form-label-font-size);
+    }
+
+    
+
+}
