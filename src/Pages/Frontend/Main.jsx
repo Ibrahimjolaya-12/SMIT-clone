@@ -12,7 +12,7 @@ const Main = () => {
         <Frontbar />
         <div className="container-fluid">
           <div
-            onClick={()=>{navigate("/dashboard")}}
+            onClick={()=>{navigate("/dashboard/dashhome")}}
             className=" card mt-3 "
             style={{ borderRadius: "20px" , cursor: "pointer"}}
           >
